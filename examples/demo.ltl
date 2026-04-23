@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_tftp_server
+
+import std::io
+use ltl_tftp_server as lib
+
+fn main() {
+    io::println("ltl_tftp_server demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
